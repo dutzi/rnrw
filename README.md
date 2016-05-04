@@ -1,5 +1,17 @@
 # rnrw - react native react web
 
+### running
+
+iOS
+```sh
+react-native run-ios
+```
+
+web
+```sh
+npm run start-web
+```
+
 ### how I setup this project
 
 #### step 1 - start two seperate projects
@@ -34,3 +46,8 @@ I concatenated both .gitignore files so git will ignore RN's files in the RW pro
 
 At this point I was able to run both the RW project (`npm start`) and the RN one (`react-native run-ios`) from `test-reactnative/`.
 
+#### step 3 - moving the ios/android files into into the src folder
+
+I moved `index.ios.js` to `src/` and updated `ios/AwesomeProject/AppDelegate.m` to point to the new location.
+
+Then I created the logic/native/web folder structure and was able to share modules between RN and RW.
