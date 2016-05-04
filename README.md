@@ -29,7 +29,7 @@ react-native init AwesomeProject
 
 I copied everything from `AwesomeProject/` to `test-reactnative/` except for `package.json`  and the `node_modules` folder.
 
-I then manually added the following to `test-reactnative/package.json` [diff](https://github.com/dutzi/rnrw/commit/dde1bdda8e1dee61b9d1f525fe1b77b2b1c6278a#diff-b9cfc7f2cdf78a7f4b91a753d10865a2R5):
+I then manually added the following to `test-reactnative/package.json` ([diff](https://github.com/dutzi/rnrw/commit/dde1bdda8e1dee61b9d1f525fe1b77b2b1c6278a#diff-b9cfc7f2cdf78a7f4b91a753d10865a2R5)):
 
 ```json
     "react": "^0.14.8",
@@ -48,8 +48,8 @@ At this point I was able to run both the RW project (`npm start`) and the RN one
 
 #### step 3 - moving the ios/android files into into the src folder
 
-I moved `index.ios.js` to `src/` and updated `ios/AwesomeProject/AppDelegate.m` to point to the new location [commit](https://github.com/dutzi/rnrw/commit/213def7bcb30f4fe639299970b06eab647450872).
+I moved `index.ios.js` to `src/` and updated `ios/AwesomeProject/AppDelegate.m` to point to the new location ([commit](https://github.com/dutzi/rnrw/commit/213def7bcb30f4fe639299970b06eab647450872)).
 
-Then I created the logic/native/web folder structure and was able to share modules between RN and RW [commit](https://github.com/dutzi/rnrw/commit/0ed7d872214c734bd7759c3b1c407bd54f97d8ad).
+Then I created the logic/native/web folder structure and was able to share modules between RN and RW ([commit](https://github.com/dutzi/rnrw/commit/0ed7d872214c734bd7759c3b1c407bd54f97d8ad)).
 
 I haven't tried playing with Android yet.
