@@ -28,7 +28,7 @@ And copied both `react/` `react-native/` from `AwesomeProject/node_modules/` to 
 
 I then deleted `test-reactnative/ios/build/` because I had errors when I tried running the RN project. I only got these errors because I ran it in the previous folder, so ignore this step if you don't get the same errors or can't find that folder.
 
-Then I had to delete `.babelrc` and move the babel configurations to webpack's config file 280b27c79ca83d90a27833e04efe1dea7efea51d.
+Then I had to delete `.babelrc` and move the babel configurations to webpack's config file ([commit](https://github.com/dutzi/rnrw/commit/280b27c79ca83d90a27833e04efe1dea7efea51d)).
 
 I concatenated both .gitignore files so git will ignore RN's files in the RW project.
 
