@@ -1,0 +1,7 @@
+{
+  "generator-react-webpack": {
+    "appName": "testReactnative",
+    "style": "sass",
+    "postcss": true
+  }
+}
